@@ -4,13 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <h1 id="game-title">Rock Paper Scissors</h1>
-    </header>
     <main class="game-container">
-      <div class="game-score">
+      <section class="game-title">
+        <h1 id="game-title">Rock Paper Scissors</h1>
+      </section>
+      <section class="game-score">
         <div class="user-score">
           <p>You:</p>
           <p id="user-score">0</p>
@@ -20,20 +21,20 @@
           <p>Computer:</p>
           <p id="comp-score">0</p>
         </div>
-      </div>
+      </section>
 
-      <div class="game-choice">
+      <section class="game-choice">
         <p id="choice-title">Make Your Choice!</p>
 
         <div class="user-choice">
-          <div class="choice" id="rock">
-            <img src="" alt="rock" />
+          <div class="circle choice" id="rock">
+            <img src="images/rock.png" alt="rock" />
           </div>
-          <div class="choice" id="paper">
-            <img src="" alt="paper" />
+          <div class="choice circle" id="paper">
+            <img src="images/paper.png" alt="paper" />
           </div>
-          <div class="choice" id="scissors">
-            <img src="" alt="scissors" />
+          <div class="choice circle" id="scissors">
+            <img src="images/scissors.png" alt="scissors" />
           </div>
         </div>
 
@@ -48,15 +49,16 @@
             <div id="bot-choice">Rock</div>
           </div>
         </div>
-      </div>
-      <div class="game-result">
+      </section>
+      <section class="game-result">
         <p id="game-result">You Win!</p>
-      </div>
+      </section>
+
+      <section class="game-guide">
+        <button class="play-again">Play Again</button>
+        <p class="guide">How to Play</p>
+      </section>
     </main>
-    <footer>
-      <button class="play-again">Play Again</button>
-      <p class="guide">How to Play</p>
-    </footer>
     <script src="app.js"></script>
   </body>
 </html>
