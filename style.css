@@ -163,3 +163,49 @@ body {
   font-size: 20px;
   margin: 20px 0;
 }
+
+@media screen and (max-width: 768px) {
+  .game-container {
+    width: 90%;
+  }
+  .game-title {
+    font-size: 18px;
+  }
+  .game-score {
+    font-size: 16px;
+  }
+  .user-score,
+  .comp-score {
+    font-size: 14px;
+  }
+
+  #choice-title {
+    font-size: 18px;
+  }
+  .circle {
+    width: 80px;
+    height: 80px;
+  }
+
+  .circle img {
+    transform: scale(0.4);
+  }
+
+  .player-choice,
+  .bot-choice {
+    font-size: 18px;
+  }
+
+  .game-result {
+    font-size: 1.5rem;
+  }
+
+  .game-guide button {
+    padding: 8px 40px;
+    font-size: 18px;
+  }
+
+  .guide {
+    font-size: 18px;
+  }
+}
